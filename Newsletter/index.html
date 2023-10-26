@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link href="https://fonts.google.com/specimen/Roboto" rel="stylesheet">
+
+  <title>Newsletter sign-up form with success message</title>
+</head>
+
+<body>
+  <div class="app">
+
+    <main class="wrapper">
+
+      <section class="container">
+
+        <!-- Sign-up form start -->
+        <article class="info">
+          <h1 class="info-title">
+            Stay updated!
+          </h1>
+          <p class="info-paragraph">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="info-details">
+            <li class="info-li">
+
+              <img src="./assets/images/icon-list.svg" alt="iconlist" id="icon-list" />
+              Product discovery and building what matters
+            </li>
+            <li class="info-li">
+
+              <img src="./assets/images/icon-list.svg" alt="iconlist" id="icon-list" />
+              Measuring to ensure updates are a success
+            </li>
+            <li class="info-li">
+
+              <img src="./assets/images/icon-list.svg" alt="iconlist" id="icon-list" />
+              And much more!
+            </li>
+          </ul>
+          <form action="#">
+            <label for="emailInput">Email address</label>
+            <input class="error-input" id="error-inp" type="email" placeholder="email@company.com" required />
+            <span class="error-message" id="error-msg">Valid email required!</span>
+            <button onclick="validateEmail()" id="submitButton">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </article>
+        <article class="image">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="desktopillustration" id="desktop" />
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
