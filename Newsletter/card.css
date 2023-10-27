@@ -1,0 +1,117 @@
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --darkslategrey: hsl(234, 29%, 20%);
+    --charcoalgrey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 3;
+    }
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 300px;
+    font-family: 'Robot', sans-serif;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    background-color: var(--charcoalgrey);
+}
+
+.app{
+    display: block;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: var(--charcoalgrey);
+    animation: fadeIn 1s ease-in-out;
+    padding: 20rem;
+
+}
+
+.card{
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    bottom: 1px;
+    background-color: var(--white);
+    color: var(--charcoalgrey);
+    border-radius: 2.2rem;
+}
+
+img{
+    overflow: clip;
+    overflow-clip-margin: content-box;
+}
+.info{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 4rem;
+    justify-content: space-between;
+    gap: 10px;
+    color: var(--charcoalgrey);
+    transition: .3s;
+}
+
+h1{
+    display: block;
+    font-weight: bold;
+    font-size: 3rem;
+}
+p{
+    margin-top: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--grey);
+}
+span{
+    color: var(--charcoalgrey);
+    font-weight: 700;
+    font-size: large;
+}
+
+
+button {
+    width: 376px;
+    height: 56px;
+    margin-top: 0.6rem;
+    padding-left: 1.45rem;
+    font-size: 1rem;
+    color: var(--white);
+    border: 1px solid;
+    background-color: var(--darkslategrey);
+    border-radius: 8px;
+    outline: none;
+    position: relative;
+}
+button:hover{
+
+
+    border-radius: 8px;
+    background: linear-gradient(90deg,rgba(255,83,123,1) 0%,rgba(255,105,58,1) 100%);
+    box-shadow: 0 10px 25px #ff625766;
+
+    transition: opacity .3s;
+}
