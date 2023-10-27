@@ -11,11 +11,20 @@ function validateEmail() {
 
     if (emailRegex.test(email)) {
       // Email is valid
+
+      window.location.replace("http://localhost:5500/Newsletter/Cardmessage.html");
       emailerror.style.background = ''
       message.style.display = 'none'; // Hide the error message
+      
+
     } else {
       // Email is invalid
       emailerror.style.background = '#ff625733';
       message.style.display = 'block'; // Show the error message
     }
+  };
+  function redirection(){
+
+    
+
   }
