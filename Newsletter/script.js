@@ -1,4 +1,5 @@
-function validateEmail() {
+function validateEmail(event) {
+  event.preventDefault();
     // Regular expression for email validation
     let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
@@ -11,11 +12,11 @@ function validateEmail() {
 
     if (emailRegex.test(email)) {
       // Email is valid
-
-      window.location.replace("http://localhost:5500/Newsletter/Cardmessage.html");
+      redirection();
+    
       emailerror.style.background = ''
       message.style.display = 'none'; // Hide the error message
-      
+
 
     } else {
       // Email is invalid
@@ -24,7 +25,8 @@ function validateEmail() {
     }
   };
   function redirection(){
-
-    
-
+    window.location.assign("Cardmessage.html");
+  }
+  function redirectionHome(){
+    window.location.assign("index.html");
   }

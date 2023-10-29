@@ -45,11 +45,11 @@
               And much more!
             </li>
           </ul>
-          <form action="#">
+          <form>
             <label for="emailInput">Email address</label>
             <input class="error-input" id="error-inp" type="email" placeholder="email@company.com" required />
             <span class="error-message" id="error-msg">Valid email required!</span>
-            <button onclick="validateEmail()" id="submitButton">
+            <button onclick="validateEmail(event)" id="submitButton">
               Subscribe to monthly newsletter
             </button>
           </form>
