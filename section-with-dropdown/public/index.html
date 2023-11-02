@@ -14,14 +14,14 @@
     <div class=" flex flex-col justify-center">
       <!--Content wrapper-->
 
-      <nav class="flex items-center justify-between p-4 relative">
+      <nav class=" flex items-center justify-between p-4 relative">
         <div class="flex items-center justify-between gap-4 ">
+          <div class="mr-12">
+            <a href="#" class="text-AlmostBlack font-extrabold text-3xl ">Snap</a>
+          </div>
 
-          <h1 class="text-xl font-extrabold mr-12">
-            <a href="#" class="text-AlmostBlack">Snap</a>
-          </h1>
-          <ul class="flex items-center justify-between gap-6">
 
+          <ul class="hidden md:flex items-center justify-between gap-6">
             <li class="relative" id="btnFeatures">
               <span class="cursor-pointer">
                 Features
@@ -29,12 +29,10 @@
               <svg class="inline-block" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
                 <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
               </svg>
-
               <!-- Dropdown Menu for Features -->
-
-
               <ul
-                class="bg-almostwhite w-44 rounded shadow-md p-3 absolute mt-2 mr-28  group-hover:block hidden flex  flex-col items-start" id="Features">
+                class="bg-almostwhite w-44 rounded shadow-md p-3 absolute mt-2   group-hover:block hidden flex  flex-col items-start mr-12"
+                id="Features">
                 <li class="flex items-center justify-between gap-6">
                   <svg class="inline-block" width="14" height="16" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -66,73 +64,68 @@
                   <span>Planning</span>
                 </li>
               </ul>
-
-
             </li>
             <li class="relative" id="btnCompany"><span class="cursor-pointer">Company </span>
               <svg class="inline-block" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
                 <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
               </svg>
-
               <ul
-              class="bg-almostwhite text-MediumGray w-44 rounded shadow-md p-3 absolute mt-2 mr-10  group-hover:block hidden flex flex-col items-start" id="Company">
-              <li class="flex items-center justify-between gap-6 cursor-pointer">
-                 <span>History</span>
-              </li>
-              <li class="flex items-center gap-6 cursor-pointer">
-                <span>Our Team</span>
-              </li>
-              <li class="flex items-center gap-6 cursor-pointer">
-             
-                <span>Blog</span>
-              </li>
-             
-            </ul>
+                class="bg-almostwhite text-MediumGray w-44 rounded shadow-md p-3 absolute mt-2 mr-10  group-hover:block hidden flex flex-col items-start"
+                id="Company">
+                <li class="flex items-center justify-between gap-6 cursor-pointer">
+                  <span>History</span>
+                </li>
+                <li class="flex items-center gap-6 cursor-pointer">
+                  <span>Our Team</span>
+                </li>
+                <li class="flex items-center gap-6 cursor-pointer">
+
+                  <span>Blog</span>
+                </li>
+              </ul>
             </li>
             <li>Careers</li>
             <li>About</li>
           </ul>
         </div>
-        <div class="flex items-center justify-between gap-6">
+        <div class=" hidden md:flex items-center justify-between gap-6">
           <a href="#"
             class="btn text-AlmostBlack  hover:border-MediumGray md:border-2  border-almostwhite  transtion ease-out duration-500">Login</a>
           <a href="#"
             class="btn text-AlmostBlack  hover:border-MediumGray md:border-2 border-almostwhite   transtion ease-out duration-100">Register</a>
         </div>
+
+        <div class=" cursor-pointer md:hidden" id="burger">
+          <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#151515" fill-rule="evenodd">
+              <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+            </g>
+          </svg>
+        </div>
       </nav>
       <!--end nav-->
-      <section class="h-auto mx-2 my-24 flex justify-around">
-
-        <div class="flex flex-col items-start justify-between">
-
-          <h1 class="mt-4 text-8xl">Make <br>remote work</h1>
-
-          <p class="w-80 pt-2">Get your team in sync, no matter your location. Streamline processes,
+      <section class="h-auto mx-2 my-24 md:flex md:flex-row-reverse  items-center flex-col-reverse justify-around">
+        <div class="flex justify-center">
+          <img class="md:w-[400px] w-[300px]" src="../images/image-hero-desktop.png" alt="">
+        </div>
+        <div class="flex flex-col md:items-start items-center justify-center md:justify-between gap-4">
+          <h1 class="mt-4 md:text-8xl text-4xl font-bold">Make remote work</h1>
+          <p class="w-80 pt-2 text-MediumGray text-center md:text-start text-xs">Get your team in sync, no matter your
+            location. Streamline processes,
             create team rituals, and watch productivity soar.</p>
-
           <button class=" mr-12 font-bold btn hover:text-almostwhite hover:bg-AlmostBlack border-2 border-AlmostBlack">
             Learn more
           </button>
-
           <div class="mt-8 flex items-center justify-between gap-6">
             <img src="../images/client-databiz.svg" alt="">
             <img src="../images/client-audiophile.svg" alt="">
             <img src="../images/client-meet.svg" alt="">
             <img src="../images/client-maker.svg" alt="">
-
           </div>
-
         </div>
-
-        <div class="w-[400px]">
-
-          <img class="" src="../images/image-hero-desktop.png" alt="">
-
-        </div>
-
-
       </section>
     </div>
 </body>
 <script src="./index.js"></script>
+
 </html>
